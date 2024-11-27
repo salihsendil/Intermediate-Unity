@@ -22,7 +22,6 @@ public class PlayerInputController : MonoBehaviour
         RayHitSomething += ClickedObject;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -46,5 +45,4 @@ public class PlayerInputController : MonoBehaviour
         _clickable.Click(sender, e);
         _clickable = null;
     }
-
 }

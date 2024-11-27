@@ -21,6 +21,4 @@ public class Sphere : MonoBehaviour, IClickable
     {
         _newColor = UnityEngine.Random.ColorHSV();
     }
-
-
 }
