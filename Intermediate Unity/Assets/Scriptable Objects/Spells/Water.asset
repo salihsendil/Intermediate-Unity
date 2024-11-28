@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597b3679fc668e54bad90d0035ee071b, type: 3}
+  m_Name: Water
+  m_EditorClassIdentifier: 
+  spellName: Water
+  description: "Derin okyanuslar\u0131n kadim bilgeli\u011Fiyle akan bu b\xFCy\xFC,
+    her darbeyi y\u0131kar ve hayat\u0131 yeniden ye\u015Fertir."
+  manaValue: 18
+  image: {fileID: 21300000, guid: cf9fd50e7e1ce404a85cbe2f3a9f6514, type: 3}
+  defense: 9
+  attack: 4
