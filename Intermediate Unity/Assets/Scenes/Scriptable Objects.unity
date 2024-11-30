@@ -291,7 +291,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -350}
+  m_AnchoredPosition: {x: 0, y: -401}
   m_SizeDelta: {x: 200, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &35118944
@@ -337,7 +337,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 35118945}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1786605563}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: CloseSpellUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &35118945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,8 +543,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -147}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: -140}
+  m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &253678547
 MonoBehaviour:
@@ -581,15 +593,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 3
+  m_fontStyle: 2
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -803,7 +815,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -44, y: 254}
+  m_AnchoredPosition: {x: -87, y: 303}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &745054144
@@ -941,8 +953,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 9.999973}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: 0, y: 53}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &869208133
 MonoBehaviour:
@@ -1016,7 +1028,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 161}
+  m_AnchoredPosition: {x: 0, y: 247}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &921627064
@@ -1403,6 +1415,7 @@ GameObject:
   - component: {fileID: 1043741691}
   - component: {fileID: 1043741690}
   - component: {fileID: 1043741689}
+  - component: {fileID: 1043741692}
   m_Layer: 5
   m_Name: Air Spell Button
   m_TagString: Untagged
@@ -1473,7 +1486,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1043741690}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1043741692}
+        m_TargetAssemblyTypeName: SpellButton, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1043741690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1512,6 +1537,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1043741687}
   m_CullTransparentMesh: 1
+--- !u!114 &1043741692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043741687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9404a04e4858c94d8c7fb6a70d84833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spellSO: {fileID: 11400000, guid: bcc1e1e5024e515488c938a6de91d0fd, type: 2}
+  OnSpellSelected:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1309205332
 GameObject:
   m_ObjectHideFlags: 0
@@ -1682,7 +1723,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 51, y: -269}
+  m_AnchoredPosition: {x: 86, y: -302}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1387979737
@@ -1732,8 +1773,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1818,7 +1859,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50, y: -269}
+  m_AnchoredPosition: {x: -87, y: -301}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1404646571
@@ -1868,8 +1909,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1962,8 +2003,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -280, y: -480}
+  m_AnchoredPosition: {x: 0, y: -5.000061}
+  m_SizeDelta: {x: -200, y: -390}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1427194299
 MonoBehaviour:
@@ -1977,7 +2018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09d99a95aa065a41a8b4b7c9fff3179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spellCard: {fileID: 11400000, guid: b0c01c78e57c33e4d953da1b93137fbc, type: 2}
+  _spellCard: {fileID: 0}
   _mana: {fileID: 745054144}
   _name: {fileID: 921627064}
   _description: {fileID: 253678547}
@@ -2113,6 +2154,7 @@ GameObject:
   - component: {fileID: 1601566593}
   - component: {fileID: 1601566592}
   - component: {fileID: 1601566591}
+  - component: {fileID: 1601566594}
   m_Layer: 5
   m_Name: Water Spell Button
   m_TagString: Untagged
@@ -2183,7 +2225,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1601566592}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1601566594}
+        m_TargetAssemblyTypeName: SpellButton, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1601566592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2222,6 +2276,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601566589}
   m_CullTransparentMesh: 1
+--- !u!114 &1601566594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601566589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9404a04e4858c94d8c7fb6a70d84833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spellSO: {fileID: 11400000, guid: 2526b69f4454bcf469f897fe01e26b21, type: 2}
+  OnSpellSelected:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1758172547
 GameObject:
   m_ObjectHideFlags: 0
@@ -2234,6 +2304,7 @@ GameObject:
   - component: {fileID: 1758172551}
   - component: {fileID: 1758172550}
   - component: {fileID: 1758172549}
+  - component: {fileID: 1758172552}
   m_Layer: 5
   m_Name: Fire Spell Button
   m_TagString: Untagged
@@ -2304,7 +2375,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1758172550}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1758172552}
+        m_TargetAssemblyTypeName: SpellButton, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1758172550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2343,6 +2426,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758172547}
   m_CullTransparentMesh: 1
+--- !u!114 &1758172552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758172547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9404a04e4858c94d8c7fb6a70d84833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spellSO: {fileID: 11400000, guid: b0c01c78e57c33e4d953da1b93137fbc, type: 2}
+  OnSpellSelected:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1786605558
 GameObject:
   m_ObjectHideFlags: 0
@@ -2355,6 +2454,7 @@ GameObject:
   - component: {fileID: 1786605561}
   - component: {fileID: 1786605560}
   - component: {fileID: 1786605559}
+  - component: {fileID: 1786605563}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2448,6 +2548,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1786605563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786605558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 311fa49ec82722148926bba5eaef9f9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

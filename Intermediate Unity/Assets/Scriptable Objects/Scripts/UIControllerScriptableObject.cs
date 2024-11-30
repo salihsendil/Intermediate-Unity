@@ -1,8 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
-public class UIController : MonoBehaviour
+public class UIControllerScriptableObject : MonoBehaviour
 {
-    public static UIController Instance { get; private set; }
+    public static UIControllerScriptableObject Instance { get; private set; }
     private GameObject _spellUI;
     private Spell _spell;
 
